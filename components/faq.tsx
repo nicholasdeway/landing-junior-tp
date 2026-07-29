@@ -5,11 +5,6 @@ import { Plus, Minus } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'Quanto preciso investir?',
-    answer:
-      'O investimento mínimo recomendado varia conforme o objetivo e segmento. Em geral, trabalho a partir de R$ 1.500/mês em verba de anúncios. Durante nossa primeira conversa, entendo seu negócio e apresento uma proposta personalizada com o orçamento ideal para seus objetivos.',
-  },
-  {
     question: 'Em quanto tempo aparecem os resultados?',
     answer:
       'Os primeiros resultados geralmente aparecem nas primeiras 2 semanas. No entanto, o período ideal para avaliar o desempenho real é entre 60 e 90 dias, quando as campanhas já foram otimizadas com dados suficientes. Cada negócio tem sua curva de aprendizado.',
@@ -59,11 +54,10 @@ export function FAQ() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                open === i
+              className={`rounded-2xl border transition-all duration-300 overflow-hidden ${open === i
                   ? 'border-[#F2BB16]/30 bg-[#F2BB16]/5'
                   : 'border-white/[0.06] bg-white/[0.02] hover:border-white/15'
-              }`}
+                }`}
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
@@ -74,18 +68,16 @@ export function FAQ() {
                   {faq.question}
                 </span>
                 <span
-                  className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
-                    open === i ? 'bg-[#F2BB16]/20 text-[#F2BB16]' : 'bg-white/[0.06] text-muted-foreground'
-                  }`}
+                  className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${open === i ? 'bg-[#F2BB16]/20 text-[#F2BB16]' : 'bg-white/[0.06] text-muted-foreground'
+                    }`}
                 >
                   {open === i ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                 </span>
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  open === i ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${open === i ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <p className="px-6 pb-5 text-sm text-muted-foreground leading-relaxed">
                   {faq.answer}
