@@ -7,49 +7,49 @@ const services = [
     icon: Search,
     title: 'Google Ads',
     description: 'Campanhas focadas em gerar vendas e leads qualificados nos momentos certos da jornada de compra.',
-    color: '#3B82F6',
-    bg: 'rgba(59,130,246,0.08)',
-    border: 'rgba(59,130,246,0.2)',
+    color: '#F2BB16',
+    bg: 'rgba(242,187,22,0.08)',
+    border: 'rgba(242,187,22,0.25)',
   },
   {
     icon: Megaphone,
     title: 'Meta Ads',
     description: 'Anúncios para Instagram e Facebook com foco em conversão, alcançando o público ideal para seu negócio.',
-    color: '#8B5CF6',
-    bg: 'rgba(139,92,246,0.08)',
-    border: 'rgba(139,92,246,0.2)',
+    color: '#E0A800',
+    bg: 'rgba(224,168,0,0.08)',
+    border: 'rgba(224,168,0,0.25)',
   },
   {
     icon: RefreshCw,
     title: 'Remarketing',
     description: 'Recupere visitantes que não converteram e aumente suas vendas com estratégias inteligentes de reativação.',
-    color: '#06B6D4',
-    bg: 'rgba(6,182,212,0.08)',
-    border: 'rgba(6,182,212,0.2)',
+    color: '#F5CC45',
+    bg: 'rgba(245,204,69,0.08)',
+    border: 'rgba(245,204,69,0.25)',
   },
   {
     icon: Layout,
     title: 'Landing Pages',
     description: 'Páginas otimizadas para converter mais, alinhadas com seus anúncios para maximizar o ROI.',
-    color: '#10B981',
-    bg: 'rgba(16,185,129,0.08)',
-    border: 'rgba(16,185,129,0.2)',
+    color: '#C99A0E',
+    bg: 'rgba(201,154,14,0.08)',
+    border: 'rgba(201,154,14,0.25)',
   },
   {
     icon: BarChart2,
     title: 'Consultoria',
     description: 'Análise completa da sua estratégia digital com recomendações práticas para escalar seus resultados.',
-    color: '#F59E0B',
-    bg: 'rgba(245,158,11,0.08)',
-    border: 'rgba(245,158,11,0.2)',
+    color: '#F2BB16',
+    bg: 'rgba(242,187,22,0.08)',
+    border: 'rgba(242,187,22,0.25)',
   },
   {
     icon: Gauge,
     title: 'Otimização Contínua',
     description: 'Monitoramento diário das campanhas com ajustes constantes para garantir máxima performance.',
-    color: '#EC4899',
-    bg: 'rgba(236,72,153,0.08)',
-    border: 'rgba(236,72,153,0.2)',
+    color: '#8A6A00',
+    bg: 'rgba(138,106,0,0.08)',
+    border: 'rgba(138,106,0,0.25)',
   },
 ]
 
@@ -61,7 +61,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16 space-y-3">
-          <p className="text-sm font-medium text-[#3B82F6] uppercase tracking-widest">
+          <p className="text-sm font-medium text-[#F2BB16] uppercase tracking-widest">
             Soluções
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">

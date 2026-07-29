@@ -7,7 +7,7 @@ const steps = [
     title: 'Diagnóstico',
     description:
       'Entendimento completo do seu negócio, público-alvo, concorrência e objetivos. Mapeamos onde você está e onde quer chegar.',
-    color: '#3B82F6',
+    color: '#F2BB16',
   },
   {
     number: '02',
@@ -15,15 +15,15 @@ const steps = [
     title: 'Planejamento',
     description:
       'Definição da estratégia ideal com escolha de plataformas, segmentações, orçamento e metas mensuráveis.',
-    color: '#8B5CF6',
+    color: '#E0A800',
   },
   {
     number: '03',
     icon: Rocket,
     title: 'Execução',
     description:
-      'Criação, configuração e ativação das campanhas com copy persuasivo, criativos otimizados e tracking completo.',
-    color: '#06B6D4',
+      'Criação, configuração e ativação das campanhas com copy persuasiva, criativos otimizados e tracking completo.',
+    color: '#F5CC45',
   },
   {
     number: '04',
@@ -31,7 +31,7 @@ const steps = [
     title: 'Otimização',
     description:
       'Acompanhamento diário com ajustes de lances, segmentações, criativos e orçamento para maximizar resultados continuamente.',
-    color: '#10B981',
+    color: '#C99A0E',
   },
 ]
 
@@ -41,7 +41,7 @@ export function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 space-y-3">
-          <p className="text-sm font-medium text-[#8B5CF6] uppercase tracking-widest">
+          <p className="text-sm font-medium text-[#F2BB16] uppercase tracking-widest">
             Metodologia
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">
@@ -70,7 +70,7 @@ export function Process() {
                 </div>
                 {/* Step number badge */}
                 <span
-                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center text-white"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center text-[#121212]"
                   style={{ background: step.color }}
                 >
                   {i + 1}
@@ -92,9 +92,9 @@ export function Process() {
         <div className="mt-16 text-center">
           <a
             href="#contato"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/20"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold text-[#121212] bg-[#F2BB16] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-yellow-400/20"
           >
-            Iniciar meu diagnóstico gratuito
+            Falar com o gestor agora
           </a>
         </div>
       </div>

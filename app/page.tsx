@@ -4,7 +4,6 @@ import { About } from '@/components/about'
 import { ClientLogos } from '@/components/client-logos'
 import { Services } from '@/components/services'
 import { WhyChooseMe } from '@/components/why-choose-me'
-import { Numbers } from '@/components/numbers'
 import { Process } from '@/components/process'
 import { Testimonials } from '@/components/testimonials'
 import { FAQ } from '@/components/faq'
@@ -22,7 +21,6 @@ export default function Home() {
       <ClientLogos />
       <Services />
       <WhyChooseMe />
-      <Numbers />
       <Process />
       <Testimonials />
       <FAQ />

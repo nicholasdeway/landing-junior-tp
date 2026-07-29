@@ -2,10 +2,10 @@ import Image from 'next/image'
 import { CheckCircle2, Award, Target, TrendingUp } from 'lucide-react'
 
 const highlights = [
-  { icon: Award, text: 'Certificado Google Ads & Meta Blueprint' },
-  { icon: Target, text: 'Mais de 150 campanhas gerenciadas' },
-  { icon: TrendingUp, text: '+R$ 5 milhões em verba administrada' },
-  { icon: CheckCircle2, text: 'Especialista em geração de leads qualificados' },
+  { icon: CheckCircle2, text: 'Acompanhamento diário das campanhas' },
+  { icon: CheckCircle2, text: 'Comunicação direta e sem enrolação' },
+  { icon: CheckCircle2, text: 'Foco total em geração de leads qualificados' },
+  { icon: CheckCircle2, text: 'Relatórios transparentes, sem enrolação' },
 ]
 
 export function About() {
@@ -35,7 +35,7 @@ export function About() {
               <div className="relative w-72 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden border border-white/10">
                 <Image
                   src="/images/junior-santos.jpg"
-                  alt="Junior Santos — Gestor de Tráfego Pago"
+                  alt="Junior Santos, Gestor de Tráfego Pago"
                   fill
                   className="object-cover object-top"
                   priority
@@ -61,13 +61,9 @@ export function About() {
                 </span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Sou especialista em tráfego pago com mais de 5 anos de experiência ajudando negócios a crescerem de forma previsível e escalável através de anúncios estratégicos no Google, Meta, YouTube e muito mais.
+                Sou gestor de tráfego pago dedicado a transformar cada real investido em resultado real para o seu negócio. Trabalho com Google Ads e Meta Ads, sempre com foco em dados, testes constantes e comunicação transparente sobre cada centavo investido. Acredito que negócio pequeno merece a mesma atenção estratégica que negócio grande, por isso meus clientes recebem acompanhamento próximo e prioritário, sem letra miúda.
               </p>
             </div>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Minha missão é simples: transformar cada real investido em campanhas no maior retorno possível para o seu negócio. Já gerenciei campanhas para mais de 80 clientes em diferentes segmentos — do e-commerce ao mercado local — sempre com foco em dados, resultados e transparência.
-            </p>
 
             {/* Destaques */}
             <ul className="flex flex-col gap-3">
@@ -87,7 +83,7 @@ export function About() {
                 href="https://wa.me/5511975546458"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-colors"
               >
                 Vamos conversar
               </a>

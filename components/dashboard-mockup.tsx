@@ -7,15 +7,15 @@ const bars = [45, 62, 48, 78, 65, 90, 85, 95, 72, 88, 76, 100]
 const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 
 const metrics = [
-  { label: 'Leads', value: '+1.847', icon: Users, color: '#3B82F6', bg: 'rgba(59,130,246,0.12)' },
-  { label: 'ROI', value: '340%', icon: TrendingUp, color: '#10B981', bg: 'rgba(16,185,129,0.12)' },
-  { label: 'Conversões', value: '8.3%', icon: Target, color: '#8B5CF6', bg: 'rgba(139,92,246,0.12)' },
-  { label: 'Investimento', value: 'R$ 12k', icon: DollarSign, color: '#F59E0B', bg: 'rgba(245,158,11,0.12)' },
+  { label: 'Leads', value: '+1.847', icon: Users, color: '#F2BB16', bg: 'rgba(242,187,22,0.12)' },
+  { label: 'ROI', value: '340%', icon: TrendingUp, color: '#E0A800', bg: 'rgba(224,168,0,0.12)' },
+  { label: 'Conversões', value: '8.3%', icon: Target, color: '#F5CC45', bg: 'rgba(245,204,69,0.12)' },
+  { label: 'Investimento', value: 'R$ 12k', icon: DollarSign, color: '#C99A0E', bg: 'rgba(201,154,14,0.12)' },
 ]
 
 const platforms = [
-  { name: 'Google Ads', pct: 58, color: '#3B82F6' },
-  { name: 'Meta Ads', pct: 42, color: '#8B5CF6' },
+  { name: 'Google Ads', pct: 58, color: '#F2BB16' },
+  { name: 'Meta Ads', pct: 42, color: '#C99A0E' },
 ]
 
 export function DashboardMockup() {
@@ -39,8 +39,8 @@ export function DashboardMockup() {
       className="relative w-full max-w-lg mx-auto animate-float"
     >
       {/* Glow blobs behind the card */}
-      <div className="absolute -top-10 -right-10 w-48 h-48 bg-[#3B82F6]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-[#8B5CF6]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-10 -right-10 w-48 h-48 bg-[#F2BB16]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-[#C99A0E]/20 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main card */}
       <div className="relative glass rounded-2xl p-5 border border-white/10 shadow-2xl shadow-black/50">
@@ -85,10 +85,10 @@ export function DashboardMockup() {
                   height: animated ? `${h}%` : '0%',
                   background:
                     i === bars.length - 1
-                      ? 'linear-gradient(to top, #3B82F6, #8B5CF6)'
+                      ? '#F2BB16'
                       : i >= bars.length - 3
-                      ? 'rgba(59,130,246,0.5)'
-                      : 'rgba(59,130,246,0.2)',
+                      ? 'rgba(242,187,22,0.5)'
+                      : 'rgba(242,187,22,0.2)',
                   transitionDelay: `${i * 60}ms`,
                 }}
                 title={`${months[i]}: ${h}%`}
@@ -129,6 +129,11 @@ export function DashboardMockup() {
         <p className="text-xs text-muted-foreground">Custo por lead</p>
         <p className="text-sm font-bold gradient-text">-47% este mês</p>
       </div>
+
+      {/* Illustrative warning */}
+      <p className="text-[10px] text-muted-foreground/40 mt-4 text-center block w-full select-none">
+        *Exemplo ilustrativo de dashboard
+      </p>
     </div>
   )
 }

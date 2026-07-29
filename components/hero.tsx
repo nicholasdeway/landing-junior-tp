@@ -21,9 +21,9 @@ export function Hero() {
           }}
         />
         {/* Glow orbs */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#3B82F6]/10 rounded-full blur-[120px]" />
-        <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#8B5CF6]/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-[#3B82F6]/8 rounded-full blur-[100px]" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#F2BB16]/8 rounded-full blur-[120px]" />
+        <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#C99A0E]/8 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-[#F2BB16]/6 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -31,62 +31,41 @@ export function Hero() {
           {/* Left content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3B82F6]/30 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#3B82F6] animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#F2BB16]/30 bg-[#F2BB16]/10 text-[#F2BB16] text-sm font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F2BB16] animate-pulse" />
               Especialista em Tráfego Pago
             </div>
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-balance">
-              Transforme investimento em anúncios em{' '}
-              <span className="gradient-text">crescimento real</span> para sua empresa.
+              Seus anúncios estão gerando clientes ou só gastando verba?
             </h1>
 
             {/* Description */}
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Crio estratégias de tráfego pago focadas em gerar mais clientes, aumentar
-              vendas e escalar negócios através do Google Ads, Meta Ads e campanhas
-              inteligentes.
+              Gestão de Google Ads e Meta Ads focada em resultado, não em achismo.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-6">
               <a
                 href="#contato"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-base font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-base font-semibold text-[#121212] bg-[#F2BB16] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-yellow-400/25"
               >
                 Quero mais clientes
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#resultados"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-base font-medium text-foreground border border-white/15 hover:border-white/30 hover:bg-white/5 transition-all duration-300"
+                href="#compromisso"
+                className="inline-flex items-center gap-1.5 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1"
               >
-                <Play className="w-4 h-4 fill-current" />
-                Ver resultados
+                Ver compromisso
+                <span className="text-lg leading-none">→</span>
               </a>
-            </div>
-
-            {/* Social proof mini */}
-            <div className="flex items-center gap-6 pt-2">
-              <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">+150</p>
-                <p className="text-xs text-muted-foreground">Campanhas</p>
-              </div>
-              <div className="w-px h-10 bg-white/10" />
-              <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">+300%</p>
-                <p className="text-xs text-muted-foreground">Crescimento médio</p>
-              </div>
-              <div className="w-px h-10 bg-white/10" />
-              <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">95%</p>
-                <p className="text-xs text-muted-foreground">Satisfação</p>
-              </div>
             </div>
           </div>
 
-          {/* Right — dashboard mockup */}
+          {/* Right: dashboard mockup */}
           <div className="relative flex justify-center lg:justify-end">
             <DashboardMockup />
           </div>

@@ -4,9 +4,9 @@ export function FinalCTA() {
     <section id="contato" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#3B82F6]/5 to-transparent" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#3B82F6]/8 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#8B5CF6]/6 rounded-full blur-[100px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#F2BB16]/5 to-transparent" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#F2BB16]/8 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#C99A0E]/6 rounded-full blur-[100px]" />
         {/* Decorative grid */}
         <div
           className="absolute inset-0 opacity-[0.02]"
@@ -20,9 +20,9 @@ export function FinalCTA() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3B82F6]/30 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-medium mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#3B82F6] animate-pulse" />
-          Diagnóstico 100% gratuito
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#F2BB16]/30 bg-[#F2BB16]/10 text-[#F2BB16] text-sm font-medium mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#F2BB16] animate-pulse" />
+          Atendimento personalizado
         </div>
 
         {/* Headline */}
@@ -33,8 +33,7 @@ export function FinalCTA() {
 
         {/* Description */}
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
-          Solicite um diagnóstico gratuito e descubra como podemos escalar suas vendas
-          utilizando tráfego pago. Sem enrolação — resultados reais.
+          Fale comigo agora e vamos entender juntos como transformar seu investimento em resultado.
         </p>
 
         {/* CTAs */}

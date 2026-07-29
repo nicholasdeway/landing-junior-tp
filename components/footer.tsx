@@ -2,9 +2,8 @@
 const navLinks = [
   { label: 'Início', href: '#inicio' },
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Resultados', href: '#resultados' },
   { label: 'Processo', href: '#processo' },
-  { label: 'Depoimentos', href: '#depoimentos' },
+  { label: 'Compromisso', href: '#compromisso' },
   { label: 'Contato', href: '#contato' },
 ]
 
@@ -105,7 +104,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
-                  <span className="w-2 h-2 rounded-full bg-[#8B5CF6]" />
+                  <span className="w-2 h-2 rounded-full bg-[#F2BB16]" />
                   Instagram
                 </a>
               </div>

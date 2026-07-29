@@ -6,9 +6,8 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { label: 'Início', href: '#inicio' },
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Resultados', href: '#resultados' },
   { label: 'Processo', href: '#processo' },
-  { label: 'Depoimentos', href: '#depoimentos' },
+  { label: 'Compromisso', href: '#compromisso' },
   { label: 'Contato', href: '#contato' },
 ]
 
@@ -48,7 +47,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-black/80 backdrop-blur-xl border-b border-white/[0.06]'
+          ? 'bg-[#121212]/90 backdrop-blur-xl border-b border-white/[0.06]'
           : 'bg-transparent'
       }`}
     >
@@ -70,7 +69,7 @@ export function Header() {
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#F2BB16] group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </nav>
@@ -79,9 +78,9 @@ export function Header() {
           <div className="hidden md:block">
             <a
               href="#contato"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/20"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#121212] bg-[#F2BB16] hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-yellow-400/20"
             >
-              Solicitar Diagnóstico
+              Falar com Especialista
             </a>
           </div>
 
@@ -98,7 +97,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-xl border-b border-white/[0.06]">
+        <div className="md:hidden bg-[#121212]/95 backdrop-blur-xl border-b border-white/[0.06]">
           <nav className="flex flex-col px-4 py-4 gap-1">
             {navLinks.map((link) => (
               <a
@@ -113,9 +112,9 @@ export function Header() {
             <a
               href="#contato"
               onClick={() => setMenuOpen(false)}
-              className="mt-3 inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6]"
+              className="mt-3 inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium text-[#121212] bg-[#F2BB16]"
             >
-              Solicitar Diagnóstico
+              Falar com Especialista
             </a>
           </nav>
         </div>

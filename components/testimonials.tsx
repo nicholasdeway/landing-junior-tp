@@ -1,125 +1,105 @@
-import { Star } from 'lucide-react'
+'use client'
 
-const testimonials = [
+import { Eye, MessageSquare, BarChart3, Users } from 'lucide-react'
+
+const promises = [
   {
-    name: 'Ana Paula Ferreira',
-    role: 'CEO — Clínica Estética Bella',
-    initials: 'AP',
-    color: '#3B82F6',
-    stars: 5,
-    text: 'Triplicamos o número de consultas em apenas 3 meses. Antes gastávamos muito e tínhamos poucos resultados. Agora cada real investido volta multiplicado.',
-    metric: '+312% em agendamentos',
+    title: 'Transparência total',
+    description: 'Você acompanha cada resultado das campanhas em tempo real, com clareza sobre onde cada centavo está sendo investido.',
+    icon: Eye,
+    color: '#F2BB16',
+    bg: 'rgba(242, 187, 22, 0.05)',
+    border: 'rgba(242, 187, 22, 0.25)'
   },
   {
-    name: 'Carlos Mendes',
-    role: 'Diretor — TechStore Online',
-    initials: 'CM',
-    color: '#8B5CF6',
-    stars: 5,
-    text: 'O ROI das campanhas superou todas as nossas expectativas. A gestão profissional fez toda a diferença. Recomendo sem hesitar para qualquer empresa.',
-    metric: 'ROAS de 8x atingido',
+    title: 'Comunicação rápida',
+    description: 'Resposta ágil e contato facilitado sempre que precisar. Nada de ficar dias esperando por um retorno sobre suas campanhas.',
+    icon: MessageSquare,
+    color: '#E0A800',
+    bg: 'rgba(224, 168, 0, 0.05)',
+    border: 'rgba(224, 168, 0, 0.25)'
   },
   {
-    name: 'Juliana Costa',
-    role: 'Fundadora — Escola de Idiomas',
-    initials: 'JC',
-    color: '#06B6D4',
-    stars: 5,
-    text: 'Em 60 dias nossa escola saiu de 20 para 80 alunos. A estratégia foi cirúrgica e o acompanhamento é impecável. Comunicação rápida e transparente.',
-    metric: '+300% de matrículas',
+    title: 'Estratégia baseada em dados',
+    description: 'Decisões e otimizações pautadas exclusivamente em números e comportamento do público, eliminando qualquer tipo de achismo.',
+    icon: BarChart3,
+    color: '#F5CC45',
+    bg: 'rgba(245, 204, 69, 0.05)',
+    border: 'rgba(245, 204, 69, 0.25)'
   },
   {
-    name: 'Roberto Lima',
-    role: 'Proprietário — Imobiliária Premium',
-    initials: 'RL',
-    color: '#10B981',
-    stars: 5,
-    text: 'O custo por lead caiu 60% e a qualidade dos contatos aumentou muito. Agora recebemos leads prontos para fechar negócio. Resultado real e mensurável.',
-    metric: '-60% no custo por lead',
-  },
-  {
-    name: 'Fernanda Oliveira',
-    role: 'Gerente — E-commerce de Moda',
-    initials: 'FO',
-    color: '#F59E0B',
-    stars: 5,
-    text: 'As campanhas de remarketing recuperaram clientes que eu achei que tinham ido embora. O faturamento cresceu 240% em apenas um trimestre de trabalho.',
-    metric: '+240% no faturamento',
-  },
-  {
-    name: 'Marcos Souza',
-    role: 'Sócio — Escritório de Advocacia',
-    initials: 'MS',
-    color: '#EC4899',
-    stars: 5,
-    text: 'Nunca pensei que marketing digital funcionaria para advocacia. Errei feio. Os leads chegam qualificados e a taxa de conversão é altíssima.',
-    metric: '+5 novos clientes/mês',
-  },
+    title: 'Acompanhamento próximo',
+    description: 'Atenção redobrada e acompanhamento diário ativo, principalmente nos primeiros meses de parceria para tracionar os resultados.',
+    icon: Users,
+    color: '#C99A0E',
+    bg: 'rgba(201, 154, 14, 0.05)',
+    border: 'rgba(201, 154, 14, 0.25)'
+  }
 ]
 
 export function Testimonials() {
   return (
-    <section id="depoimentos" className="py-24 relative overflow-hidden">
+    <section id="compromisso" className="py-24 relative overflow-hidden bg-[#1A1A1A]">
+      {/* Background glow effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#8B5CF6]/6 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[#3B82F6]/6 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#C99A0E]/5 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[#F2BB16]/5 rounded-full blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 space-y-3">
-          <p className="text-sm font-medium text-[#3B82F6] uppercase tracking-widest">
-            Depoimentos
+          <p className="text-sm font-medium text-[#F2BB16] uppercase tracking-widest">
+            Compromisso
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">
-            O que dizem nossos clientes
+            Meu compromisso com você
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Resultados reais de empresas que decidiram profissionalizar sua presença digital.
+          <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed text-sm sm:text-base">
+            4 promessas reais para guiar nossa parceria e profissionalizar a presença digital do seu negócio.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {testimonials.map((t) => (
+        {/* Promises Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {promises.map((p) => (
             <div
-              key={t.name}
-              className="group glass glass-hover rounded-2xl p-6 flex flex-col gap-4"
+              key={p.title}
+              className="group relative rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+              style={{
+                background: p.bg,
+                borderColor: 'rgba(255,255,255,0.06)',
+                boxShadow: '0 4px 20px -2px rgba(0,0,0,0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = p.border
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+              }}
             >
-              {/* Stars */}
-              <div className="flex gap-0.5">
-                {Array.from({ length: t.stars }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[#F59E0B] text-[#F59E0B]" />
-                ))}
-              </div>
-
-              {/* Text */}
-              <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                &ldquo;{t.text}&rdquo;
-              </p>
-
-              {/* Metric badge */}
-              <div
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full self-start"
-                style={{ background: `${t.color}15`, color: t.color, border: `1px solid ${t.color}30` }}
-              >
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: t.color }} />
-                {t.metric}
-              </div>
-
-              {/* Author */}
-              <div className="flex items-center gap-3 pt-2 border-t border-white/[0.06]">
+              <div>
+                {/* Icon Wrapper */}
                 <div
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0"
-                  style={{ background: `linear-gradient(135deg, ${t.color}, ${t.color}88)` }}
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
+                  style={{ background: p.bg, border: `1px solid ${p.border}` }}
                 >
-                  {t.initials}
+                  <p.icon className="w-5 h-5" style={{ color: p.color }} />
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.role}</p>
-                </div>
+
+                <h3 className="text-lg font-bold text-foreground mb-3 leading-snug">
+                  {p.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {p.description}
+                </p>
               </div>
+
+              {/* Decorative accent corner line */}
+              <div
+                className="absolute top-0 right-0 w-8 h-8 rounded-tr-2xl border-t border-r opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ borderColor: p.color }}
+              />
             </div>
           ))}
         </div>
