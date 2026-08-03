@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -27,7 +28,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} bg-background`}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VNKSL7G1DC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-VNKSL7G1DC');
+          `}
+        </Script>
+      </head>
       <body className="antialiased font-sans">{children}</body>
     </html>
   )
 }
+
