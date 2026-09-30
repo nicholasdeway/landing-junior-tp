@@ -1,4 +1,6 @@
 
+import Image from 'next/image'
+
 const navLinks = [
   { label: 'Início', href: '#inicio' },
   { label: 'Serviços', href: '#servicos' },
@@ -38,10 +40,14 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4">
-            <a href="#inicio" className="group block">
-              <span className="text-white font-bold text-lg tracking-wider uppercase transition-opacity hover:opacity-85 duration-200">
-                Junior Santos
-              </span>
+            <a href="#inicio" className="group inline-block">
+              <Image
+                src="/images/logo2.png"
+                alt="Junior Santos"
+                width={350}
+                height={100}
+                className="h-[78px] w-auto object-contain transition-opacity hover:opacity-85 duration-200"
+              />
             </a>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs mx-auto md:mx-0">
               Especialista em tráfego pago. Estratégias que transformam investimento em crescimento real para empresas.

@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     'Transforme seu investimento em anúncios em crescimento real. Estratégias de tráfego pago focadas em gerar mais clientes, aumentar vendas e escalar negócios.',
   generator: 'v0.app',
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 }
 
 export const viewport: Viewport = {

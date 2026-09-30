@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
@@ -45,19 +46,23 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? 'bg-[#121212]/90 backdrop-blur-xl border-b border-white/[0.06]'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between min-h-20 py-2">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2 group">
-            <span className="text-white font-bold text-lg tracking-wider uppercase transition-opacity hover:opacity-85 duration-200">
-              Junior Santos
-            </span>
+            <Image
+              src="/images/logo2.png"
+              alt="Junior Santos"
+              width={350}
+              height={100}
+              className="h-[70px] w-auto object-contain transition-opacity hover:opacity-85 duration-200"
+              priority
+            />
           </a>
 
           {/* Desktop Nav */}
